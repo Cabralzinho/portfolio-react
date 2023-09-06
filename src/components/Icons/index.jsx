@@ -6,8 +6,12 @@ import { HtmlIcon } from "./HtmlIcon";
 import { CssIcon } from "./CssIcon";
 import { JavaScriptIcon } from "./JavaScriptIcon";
 import { ReactIcon } from "./ReactIcon"
+import { BarIcon } from "./BarIcon";
+import { CloseIcon } from "./CloseIcon";
 
 export const Icons = {
+  Bar: BarIcon,
+  Close: CloseIcon,
   Github: GithubIcon,
   Instagram: InstagramIcon,
   Linkedin: LinkedinIcon,

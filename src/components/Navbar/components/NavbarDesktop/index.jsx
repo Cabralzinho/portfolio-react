@@ -2,6 +2,7 @@ import React from "react";
 import { NavbarAnchor } from "./components/NavbarAnchor";
 import { NavbarIcon } from "./components/NavbarIcon";
 import styles from "../styles/Navbar.module.css";
+import { navbarAnchorsInfo } from "../../constants/navbarAnchorsInfo";
 
 export const NavbarDesktop = () => {
   return (
@@ -15,31 +16,13 @@ export const NavbarDesktop = () => {
         </div>
 
         <ul className="flex gap-12 text-[18px] dark:text-gray-400 font-bold">
-          <NavbarAnchor
-            href={"#start"}
-            text={"Inicío"}
-            index={1}
-          />
-          <NavbarAnchor
-            href={"#about-me"}
-            text={"Sobre mim"}
-            index={2}
-          />
-          <NavbarAnchor
-            href={"#projects"}
-            text={"Projetos"}
-            index={3}
-          />
-          <NavbarAnchor
-            href={"#services"}
-            text={"Serviços"}
-            index={4}
-          />
-          <NavbarAnchor
-            href={"#knowledges"}
-            text={"Conhecimentos"}
-            index={5}
-          />
+          {navbarAnchorsInfo.map((info, index) =>
+            <NavbarAnchor
+              href={info.href}
+              text={info.label}
+              index={index}
+            />
+          )}
         </ul>
       </nav>
     </div>

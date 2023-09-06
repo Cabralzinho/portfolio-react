@@ -2,6 +2,7 @@ import React from 'react'
 import { useHashChange } from './hooks/useHashChange'
 
 export const NavbarAnchor = ({
+  className,
   href,
   text,
   index
@@ -10,10 +11,10 @@ export const NavbarAnchor = ({
   const hashMatched = hash === href
 
   return (
-    <li className=''>
+    <li className="flex">
       <a
         style={{animationDelay: `${index * 0.2}s`}}
-        className={`dark:hover:text-gray-200 hover:text-gray-100 transition-all opacity-0 animation-appear ${hashMatched ? "text-indigo-600" : ""}`}
+        className={className}
         href={href}>
         {text}
       </a>
