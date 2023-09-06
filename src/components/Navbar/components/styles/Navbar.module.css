@@ -1,0 +1,12 @@
+.animationNavbar {
+  animation: navbar .6s;
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

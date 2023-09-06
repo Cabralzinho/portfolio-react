@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-slate-900 dark:text-gray-200;
+  @apply bg-slate-200 dark:bg-slate-950;
+  @apply overflow-x-hidden
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold
+}
+
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+h6 {
+  @apply text-lg;
+}
+
+.animation-appear {
+  animation: appear .5s forwards;
+}
+
+.animation-float {
+  animation: float 8s infinite;
+}
+
+.container {
+  @apply max-w-[1200px]
+}
+
+.text-gradient-primary {
+  @apply bg-gradient-to-br text-transparent from-indigo-700 to-indigo-500 bg-clip-text
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-1rem);
+}
+  50% {
+    transform: translateY(1rem);
+}
+  100% {
+    transform: translateY(-1rem);
+}
+}
