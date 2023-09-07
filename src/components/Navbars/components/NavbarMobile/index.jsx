@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from "../styles/Navbar.module.css";
 import { NavbarIcon } from '../NavbarDesktop/components/NavbarIcon';
 import { Icons } from '../../../Icons';
-import { NavbarAnchor } from '../NavbarMobile/components/NavbarAnchor';
+import { NavbarAnchor } from './components/NavbarAnchorMobile';
 import { navbarAnchorsInfo } from '../../constants/navbarAnchorsInfo';
 
 export const NavbarMobile = () => {

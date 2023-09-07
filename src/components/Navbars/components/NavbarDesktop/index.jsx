@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarAnchor } from "./components/NavbarAnchor";
+import { NavbarAnchor } from "./components/NavbarAnchorDesktop";
 import { NavbarIcon } from "./components/NavbarIcon";
 import styles from "../styles/Navbar.module.css";
 import { navbarAnchorsInfo } from "../../constants/navbarAnchorsInfo";
