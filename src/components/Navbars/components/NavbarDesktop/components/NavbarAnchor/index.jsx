@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHashChange } from './hooks/useHashChange'
+import { useHashChangeDesktop } from './hooks/useHashChangeDesktop'
 
 export const NavbarAnchor = ({
   className,
@@ -7,7 +7,7 @@ export const NavbarAnchor = ({
   text,
   index
 }) => {
-  const hash = useHashChange();
+  const hash = useHashChangeDesktop();
   const hashMatched = hash === href
 
   return (

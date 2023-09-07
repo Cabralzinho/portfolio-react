@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from "../styles/Navbar.module.css";
 import { NavbarIcon } from '../NavbarDesktop/components/NavbarIcon';
 import { Icons } from '../../../Icons';
-import { NavbarAnchor } from '../NavbarDesktop/components/NavbarAnchor';
+import { NavbarAnchor } from '../NavbarMobile/components/NavbarAnchor';
 import { navbarAnchorsInfo } from '../../constants/navbarAnchorsInfo';
 
 export const NavbarMobile = () => {
@@ -31,11 +31,14 @@ export const NavbarMobile = () => {
       </div>
       {navbarIsOpen ?
         <div className='px-2 flex flex-col bg-slate-900'>
-          <ul className='text-lg divide-y flex flex-col text-gray-200'>
+          <ul
+            onClick={() => setNavbarIsOpen(false)}
+            className='text-lg divide-y flex flex-col text-gray-200'>
             {navbarAnchorsInfo.map((info, index) =>
               <NavbarAnchor
-                className="py-4"
-                info={info.href}
+                className="py-4 cursor-pointer w-full hover:text-gray-400"
+                key={info.href}
+                href={info.href}
                 text={info.label}
                 index={index}
               />

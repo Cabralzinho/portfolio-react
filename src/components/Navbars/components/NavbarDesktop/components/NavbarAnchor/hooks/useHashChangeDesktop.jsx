@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const useHashChange = () => {
+export const useHashChangeDesktop = () => {
   const [hash, setHash] = useState(window.location.hash);
 
   window.addEventListener("hashchange", (e) => {

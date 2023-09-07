@@ -1,6 +1,6 @@
 import './App.css'
-import { NavbarDesktop } from './components/Navbar/components/NavbarDesktop'
-import { NavbarMobile } from './components/Navbar/components/NavbarMobile'
+import { NavbarDesktop } from './components/Navbars/components/NavbarDesktop'
+import { NavbarMobile } from './components/Navbars/components/NavbarMobile'
 import { Sections } from './components/Sections'
 
 function App() {

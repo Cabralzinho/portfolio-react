@@ -18,6 +18,7 @@ export const NavbarDesktop = () => {
         <ul className="flex gap-12 text-[18px] dark:text-gray-400 font-bold">
           {navbarAnchorsInfo.map((info, index) =>
             <NavbarAnchor
+              key={info.href}
               href={info.href}
               text={info.label}
               index={index}
